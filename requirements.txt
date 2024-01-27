@@ -1,0 +1,8 @@
+Pillow
+tensorflow[and-cuda]
+-U scikit-learn
+-U matplotlib
+opencv-python
+pandas
+lime
+tqdm

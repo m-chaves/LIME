@@ -9,12 +9,12 @@ In this work, we propose different methods to perturb images and compare their r
 To be more specific, the original technique generates distorted versions of an image by randomly selecting some regions of the original image $\xi$ to be changed.
 We call *turned off* regions the parts of the image that will suffer a change and *turned on* the ones that will not.
 We explore different alteration approaches for *turned off* regions.
-We start by generating a replacement image $\xi^*$.
-Then we replace the *turned off* regions of the original image with the respective pixels in $\xi^*$, while the pixels in the *turned on* regions remain unchanged.
+We start by generating a replacement image $$\xi^*$$.
+Then we replace the *turned off* regions of the original image with the respective pixels in $$\xi^*$$, while the pixels in the *turned on* regions remain unchanged.
 With the default settings, LIME follows this same process to distort images, simply using the mean of the pixels in the *turned off* regions for replacement.
 We explore 7 other ways of creating $\xi^*$ and, therefore, changing how perturbed samples are generated.
 
-> Read the full report here
+> Read the full report [here](https://github.com/m-chaves/LIME/blob/main/main.pdf)
 
 This study takes place as part of the Maasai team in collaboration with Université Côte d'Azur. 
 Maasai is a research team at Inria Sophia-Antipolis, working on the models and algorithms of Artificial Intelligence. 
@@ -26,6 +26,6 @@ Install the requirements using
 
 ``` pip install -r requirements.txt ```
 
-The lime_perturbed_samples jupyter notebook contains a condensed version of the image perturbation techniques.
+The [lime_perturbed_samples](https://github.com/m-chaves/LIME/blob/main/lime_perturbed_samples.ipynb) jupyter notebook contains a condensed version of the image perturbation techniques.
 The notebook also contains functions of the evaluation methods explained in the full report.   
 
